@@ -309,10 +309,12 @@ export function GrowlerExperience() {
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" variant="console">
-  CONTACT PERSON
-
-                  <ChevronRight />
+                <Button
+                  size="lg"
+                  variant="signal"
+                  className="flex items-center justify-center gap-2 font-mono uppercase">
+                  CONTACT PERSON
+                  <ChevronRight className="w-4 h-4 text-black"/>
                 </Button>
                 <Button className="font-mono uppercase" size="lg" variant="console">
                   Job Opening
