@@ -10,13 +10,16 @@ export function Button({
   className = "",
   variant = "default",
   size = "default",
+  children,
   ...props
 }: ButtonProps) {
   const variantStyles = {
     default:
       "bg-white text-black hover:bg-gray-200",
+
     signal:
       "bg-[#FF9F1A] text-black hover:bg-[#ffad33]",
+
     console:
       "border border-white/20 bg-black text-white hover:bg-white/10",
   };
@@ -33,11 +36,14 @@ export function Button({
         transition-all
         duration-200
         font-medium
+        cursor-pointer
         ${variantStyles[variant]}
         ${sizeStyles[size]}
         ${className}
       `}
       {...props}
-    />
+    >
+      {children}
+    </button>
   );
 }

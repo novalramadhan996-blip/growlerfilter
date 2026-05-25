@@ -161,31 +161,65 @@
 }
 
 @keyframes scan-line {
-  0% { transform: translateY(-10%); }
-  100% { transform: translateY(110%); }
+  0% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(110%);
+  }
 }
 
 @keyframes flicker {
-  0%, 19%, 21%, 63%, 65%, 100% { opacity: 1; }
-  20%, 64% { opacity: 0.4; }
+  0%,
+  19%,
+  21%,
+  63%,
+  65%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  64% {
+    opacity: 0.4;
+  }
 }
 
 @keyframes terminal-crawl {
-  0% { transform: translate3d(0, 0, 0); }
-  100% { transform: translate3d(-8%, 8%, 0); }
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-8%, 8%, 0);
+  }
 }
 
 @keyframes signal-pulse {
-  0%, 100% { box-shadow: 0 0 0 0 oklch(0.79 0.17 70 / 0.22); }
-  70% { box-shadow: 0 0 0 10px oklch(0.79 0.17 70 / 0); }
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 oklch(0.79 0.17 70 / 0.22);
+  }
+  70% {
+    box-shadow: 0 0 0 10px oklch(0.79 0.17 70 / 0);
+  }
 }
 
 @keyframes glitch {
-  0%, 100% { transform: translateX(0); }
-  20% { transform: translateX(1px); }
-  40% { transform: translateX(-1px); }
-  60% { transform: translateX(2px); }
-  80% { transform: translateX(-2px); }
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(1px);
+  }
+  40% {
+    transform: translateX(-1px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  80% {
+    transform: translateX(-2px);
+  }
 }
 
 @layer base {
@@ -200,8 +234,16 @@
   body {
     min-height: 100svh;
     background:
-      radial-gradient(circle at top, oklch(0.28 0.07 35 / 0.24), transparent 0 38%),
-      radial-gradient(circle at bottom right, oklch(0.42 0.14 28 / 0.16), transparent 0 28%),
+      radial-gradient(
+        circle at top,
+        oklch(0.28 0.07 35 / 0.24),
+        transparent 0 38%
+      ),
+      radial-gradient(
+        circle at bottom right,
+        oklch(0.42 0.14 28 / 0.16),
+        transparent 0 28%
+      ),
       var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
@@ -226,8 +268,18 @@
     position: absolute;
     inset: 0;
     background-image:
-      linear-gradient(to right, transparent 0, transparent calc(100% - 1px), var(--color-grid) calc(100% - 1px)),
-      linear-gradient(to bottom, transparent 0, transparent calc(100% - 1px), var(--color-grid) calc(100% - 1px));
+      linear-gradient(
+        to right,
+        transparent 0,
+        transparent calc(100% - 1px),
+        var(--color-grid) calc(100% - 1px)
+      ),
+      linear-gradient(
+        to bottom,
+        transparent 0,
+        transparent calc(100% - 1px),
+        var(--color-grid) calc(100% - 1px)
+      );
     background-size: 120px 120px;
     opacity: 0.24;
     pointer-events: none;
@@ -238,7 +290,12 @@
     position: absolute;
     inset: -30% 0 auto;
     height: 35%;
-    background: linear-gradient(180deg, transparent 0%, oklch(0.79 0.17 70 / 0.16) 48%, transparent 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      oklch(0.79 0.17 70 / 0.16) 48%,
+      transparent 100%
+    );
     animation: scan-line 7s linear infinite;
     pointer-events: none;
     mix-blend-mode: screen;
@@ -247,7 +304,11 @@
   .console-panel {
     position: relative;
     border: 1px solid var(--color-border);
-    background: linear-gradient(180deg, oklch(0.2 0.014 35 / 0.9), var(--color-panel));
+    background: linear-gradient(
+      180deg,
+      oklch(0.2 0.014 35 / 0.9),
+      var(--color-panel)
+    );
     box-shadow: var(--shadow-panel);
     backdrop-filter: blur(16px);
   }
@@ -258,7 +319,12 @@
     inset-inline: 0;
     top: 0;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-primary),
+      transparent
+    );
     opacity: 0.6;
   }
 
@@ -331,8 +397,17 @@
 
   .terminal-noise {
     background-image:
-      linear-gradient(transparent 0%, oklch(0.79 0.17 70 / 0.04) 50%, transparent 100%),
-      repeating-linear-gradient(180deg, transparent, transparent 3px, oklch(0.95 0 0 / 0.018) 4px);
+      linear-gradient(
+        transparent 0%,
+        oklch(0.79 0.17 70 / 0.04) 50%,
+        transparent 100%
+      ),
+      repeating-linear-gradient(
+        180deg,
+        transparent,
+        transparent 3px,
+        oklch(0.95 0 0 / 0.018) 4px
+      );
   }
 
   .data-stream {
@@ -341,7 +416,11 @@
     width: 40rem;
     height: 40rem;
     border-radius: 999px;
-    background: radial-gradient(circle, oklch(0.74 0.17 55 / 0.14), transparent 55%);
+    background: radial-gradient(
+      circle,
+      oklch(0.74 0.17 55 / 0.14),
+      transparent 55%
+    );
     filter: blur(50px);
     animation: terminal-crawl 12s linear infinite alternate;
     pointer-events: none;
@@ -362,17 +441,28 @@
     display: block;
     height: 100%;
     border-radius: inherit;
-    background: linear-gradient(90deg, var(--color-warning), var(--color-danger));
+    background: linear-gradient(
+      90deg,
+      var(--color-warning),
+      var(--color-danger)
+    );
   }
 
   .forensic-grid {
-    background-image: linear-gradient(90deg, var(--color-grid) 1px, transparent 1px), linear-gradient(var(--color-grid) 1px, transparent 1px);
+    background-image:
+      linear-gradient(90deg, var(--color-grid) 1px, transparent 1px),
+      linear-gradient(var(--color-grid) 1px, transparent 1px);
     background-size: 20px 20px;
   }
 
   .hud-divider {
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--color-border),
+      transparent
+    );
   }
 
   .signal-chip {

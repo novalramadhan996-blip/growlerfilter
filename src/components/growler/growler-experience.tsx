@@ -309,16 +309,32 @@ export function GrowlerExperience() {
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Button
-                  size="lg"
-                  variant="signal"
-                  className="flex items-center justify-center gap-2 font-mono uppercase">
-                  CONTACT PERSON
-                  <ChevronRight className="w-4 h-4 text-black"/>
-                </Button>
-                <Button className="font-mono uppercase" size="lg" variant="console">
-                  Job Opening
-                </Button>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Request%20for%20Demo"
+                  target="_blank"
+                >
+                  <Button
+                    size="lg"
+                    variant="signal"
+                    className="flex items-center justify-center gap-2 font-mono uppercase"
+                  >
+                    Contact Team
+                    <ChevronRight className="w-4 h-4 text-black" />
+                  </Button>
+                </a>
+
+                                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Joining%20The%20Team"
+                  target="_blank"
+                >
+                  <Button
+                    className="font-mono uppercase"
+                    size="lg"
+                    variant="console"
+                  >
+                    Apply Job
+                  </Button>
+                </a>
               </div>
             </div>
 
@@ -728,12 +744,32 @@ export function GrowlerExperience() {
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-                <Button className="font-mono uppercase" size="lg" variant="signal">
-                  Contact Person
-                </Button>
-                <Button className="font-mono uppercase" size="lg" variant="console">
-                  Job Opening
-                </Button>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Request%20for%20Demo"
+                  target="_blank"
+                >
+                  <Button
+                    size="lg"
+                    variant="signal"
+                    className="flex items-center justify-center gap-2 font-mono uppercase"
+                  >
+                    Contact Team
+                    <ChevronRight className="w-4 h-4 text-black" />
+                  </Button>
+                </a>
+
+                                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Joining%20The%20Team"
+                  target="_blank"
+                >
+                  <Button
+                    className="font-mono uppercase"
+                    size="lg"
+                    variant="console"
+                  >
+                    Apply Job
+                  </Button>
+                </a>
               </div>
             </div>
           </GrowlerPanel>
