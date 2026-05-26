@@ -781,7 +781,10 @@ export function GrowlerExperience() {
               <img src={growlerFilterLogo} alt="Growler Filter" className="h-10 w-auto object-contain" />
               <p className="font-mono text-sm text-foreground">Growler Filter System</p>
             </div>
-            <p className="text-sm text-muted-foreground">Filtering • Analyzing • Protecting</p>
+              <div className="text-center">
+                Filtering • Analyzing • Protecting
+              </div>
+            <div>The Octagon, Singapore · 069534</div>
           </div>
         </footer>
       </div>
