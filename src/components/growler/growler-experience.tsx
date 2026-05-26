@@ -310,7 +310,7 @@ export function GrowlerExperience() {
 
               <div className="flex flex-col gap-3 sm:flex-row">
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Request%20for%20Demo"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=connect@growlerfilter.com&su=Request%20for%20Demo"
                   target="_blank"
                 >
                   <Button
@@ -324,7 +324,7 @@ export function GrowlerExperience() {
                 </a>
 
                                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Joining%20The%20Team"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=connect@growlerfilter.com&su=Joining%20The%20Team"
                   target="_blank"
                 >
                   <Button
@@ -745,7 +745,7 @@ export function GrowlerExperience() {
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Request%20for%20Demo"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=connect@growlerfilter.com&su=Request%20for%20Demo"
                   target="_blank"
                 >
                   <Button
@@ -759,7 +759,7 @@ export function GrowlerExperience() {
                 </a>
 
                                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=yourmail@email.com&su=Joining%20The%20Team"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=connect@growlerfilter.com&su=Joining%20The%20Team"
                   target="_blank"
                 >
                   <Button
