@@ -22,8 +22,8 @@ import {
   Waypoints,
 } from "lucide-react";
 
-import growlerFilterHero from "../../assets/growler-filter-hero.png";
-import growlerFilterLogo from "../../assets/growler-filter-logo.png";
+import growlerFilterHero from "../../assets/logo-growler.png";
+import growlerFilterLogo from "../../assets/logo-growler.png";
 import { Button } from "../ui/button";
 import {
   GrowlerMetric,
@@ -287,7 +287,7 @@ export function GrowlerExperience() {
               <img
                 src={growlerFilterHero}
                 alt="Growler Filter — Intelligence Against Illegal Content"
-                className="h-auto w-full max-w-lg object-contain"
+                className="mr-auto h-auto w-72 object-contain"
               />
               <div className="space-y-3">
                 {bootLines.map((line, index) => (
