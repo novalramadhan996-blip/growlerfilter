@@ -22,8 +22,8 @@ import {
   Waypoints,
 } from "lucide-react";
 
-import growlerFilterHero from "../../assets/logo-growler.png";
-import growlerFilterLogo from "../../assets/logo-growler.png";
+import growlerFilterHero from "../../assets/logo growler.png";
+import growlerFilterLogo from "../../assets/logo growler.png";
 import { Button } from "../ui/button";
 import {
   GrowlerMetric,
